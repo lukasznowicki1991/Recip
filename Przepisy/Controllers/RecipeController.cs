@@ -87,5 +87,10 @@ namespace Przepisy.Controllers
             }
             return View(model);
         }
+
+        public ActionResult test()
+        {
+            return View();
+        }
     }
 }

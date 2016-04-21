@@ -6,34 +6,43 @@
 }
 
 <h2>Baza dostępnych przepisów kulinarnych</h2>
-<hr />
+<hr/>
 <style>
     div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 300px;
- display:inline-block;
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 300px;
+        display: inline-block;
 
-}
+    }
 
-div.img:hover {
-    border: 1px solid #777;
-}
+    div.img:hover {
+        border: 1px solid #777;
+    }
 
-div.img img {
-    width: 100%;
-    height: auto;
-}
+    div.img img {
+        width: 100%;
+        height: auto;
+    }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-    word-wrap: break-word;
-
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+.selectize-input input {
+    width: 100% !important;
 }
 </style>
-    <table>
+<form>
+    <div class="selectize form-group form-inline">
+        <input placeholder="Podaj frazę albo #hasztag" />
+    </div>
+</form>
+   
+<table>
         @{
             int j = 0;
             for (int i = 0; i < Model.ListViewModels.Count(); i += 4)
