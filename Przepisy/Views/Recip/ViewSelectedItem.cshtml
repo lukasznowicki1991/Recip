@@ -1,0 +1,51 @@
+﻿@model Przepisy.Models.ListItemModelView
+@{
+    ViewBag.Title = "ViewSelectedItem";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<style>
+   div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 20px;
+    width: 600px;
+    margin-left: 300px;
+
+}
+
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+</style>
+<h2>Otwarty przepis: </h2>
+
+<table>
+    <tr>
+        <td>
+        <div class="img">
+            <img src="data:image/png;base64,@Convert.ToBase64String(Model.ImageData, 0, Model.ImageData.Length)" width="600" height="400"/>
+            <div class="desc">
+                <h1>@Model.Title</h1>
+                <hr/>
+                <h3>Opis: @Model.ShortDescription</h3>
+                <h5 ><b><u>Sposób przygotowania:</u></b><br/></h5>
+                <p>@Model.Content</p>
+            </div>
+            <a href="../List" class="btn btn-primary">
+                <span class="glyphicon glyphicon-arrow-left"></span>Wracaj
+            </a>
+        </div>
+        </td>
+    </tr>
+</table>

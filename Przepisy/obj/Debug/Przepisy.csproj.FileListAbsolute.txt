@@ -130,3 +130,16 @@ C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\obj\Debug\Przepisy.Migratio
 C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\obj\Debug\Przepisy.csproj.GenerateResource.Cache
 C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\obj\Debug\Przepisy.dll
 C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\obj\Debug\Przepisy.pdb
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.Mvc.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\WebActivatorEx.dll
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.xml
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.Mvc.xml
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Newuser\Desktop\FirstRepo\Przepisy\Przepisy\obj\Debug\Przepisy.Migrations.init9.resources

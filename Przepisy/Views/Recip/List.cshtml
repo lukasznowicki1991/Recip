@@ -1,0 +1,75 @@
+﻿@model Przepisy.Models.ListViewModel
+
+@{
+    ViewBag.Title = "List";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>Baza dostępnych przepisów kulinarnych</h2>
+<hr/>
+<style>
+    div.img {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 300px;
+        display: inline-block;
+
+    }
+
+    div.img:hover {
+        border: 1px solid #777;
+    }
+
+    div.img img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    
+.selectize-input input {
+    width: 100% !important;
+}
+</style>
+<form>
+    <div class="selectize form-group form-inline">
+        <input placeholder="Podaj frazę albo #hasztag" />
+    </div>
+</form>
+   
+<table>
+        @{
+            int j = 0;
+            for (int i = 0; i < Model.ListViewModels.Count(); i += 4)
+            {
+                j = i;
+                <tr>
+                    @* I have done this for show 4 images in  a Row *@
+                    @while (j < i + 4 && j < Model.ListViewModels.Count())
+                {
+                    <td>
+                            <div class="img">
+                                <img src="data:image/png;base64,@Convert.ToBase64String(Model.ListViewModels[j].ImageData, 0, Model.ListViewModels[j].ImageData.Length)" width="300" height="200"/>
+                                <div class="desc">
+                                    <p><u><b>Tytuł</b></u>:@Model.ListViewModels[j].Title</p>
+                                    <p><u><b>Opis:</b></u>@Model.ListViewModels[j].ShortDescription</p>
+                                    @Html.HiddenFor(m=>@Model.ListViewModels[j].ID)
+                                    <a class="btn btn-info" href="@Url.Action("ViewSelectedItem",new {id=Model.ListViewModels[j].ID})">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                        Czytaj dalej
+                                        </a>
+                                </div>
+                            </div>
+                    </td>
+
+                        j++;
+                    }
+                </tr>
+            }
+        }
+    </table>

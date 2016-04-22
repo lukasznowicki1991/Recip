@@ -8,6 +8,6 @@ namespace Przepisy.Models
 {
     public class ApplicationDBContext :DbContext 
     {
-        public DbSet<ReceipModel> Receipts { get; set; }
+        public DbSet<RecipModel> Recipts { get; set; }
     }
 }

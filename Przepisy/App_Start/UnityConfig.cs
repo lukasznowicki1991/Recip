@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using Przepisy.Services;
 
 namespace Przepisy.App_Start
 {
@@ -37,6 +38,7 @@ namespace Przepisy.App_Start
 
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
+             container.RegisterType<IRecipServices, RecipServices>(new PerRequestLifetimeManager());
         }
     }
 }
